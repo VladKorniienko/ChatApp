@@ -1,0 +1,39 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAppAspire.AppHost", "ChatAppAspire.AppHost\ChatAppAspire.AppHost.csproj", "{C41D06A2-7360-4E4A-9293-4F204B9348D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAppAspire.ServiceDefaults", "ChatAppAspire.ServiceDefaults\ChatAppAspire.ServiceDefaults.csproj", "{964078A2-2BC6-4414-9E8D-89CD3A97CC76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAppAspire.ApiService", "ChatAppAspire.ApiService\ChatAppAspire.ApiService.csproj", "{9ECC6017-7092-4F3B-B20D-D5957AD9D2C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAppAspire.Web", "ChatAppAspire.Web\ChatAppAspire.Web.csproj", "{3006A195-815B-401C-8AA5-CB03D97F8DFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C41D06A2-7360-4E4A-9293-4F204B9348D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41D06A2-7360-4E4A-9293-4F204B9348D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41D06A2-7360-4E4A-9293-4F204B9348D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41D06A2-7360-4E4A-9293-4F204B9348D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964078A2-2BC6-4414-9E8D-89CD3A97CC76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964078A2-2BC6-4414-9E8D-89CD3A97CC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964078A2-2BC6-4414-9E8D-89CD3A97CC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964078A2-2BC6-4414-9E8D-89CD3A97CC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ECC6017-7092-4F3B-B20D-D5957AD9D2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ECC6017-7092-4F3B-B20D-D5957AD9D2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ECC6017-7092-4F3B-B20D-D5957AD9D2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ECC6017-7092-4F3B-B20D-D5957AD9D2C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3006A195-815B-401C-8AA5-CB03D97F8DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3006A195-815B-401C-8AA5-CB03D97F8DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3006A195-815B-401C-8AA5-CB03D97F8DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3006A195-815B-401C-8AA5-CB03D97F8DFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
