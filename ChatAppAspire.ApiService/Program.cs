@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.AddSqlServerDbContext<ChatDbContext>(connectionName: "chatDatabase");
+builder.AddSqlServerDbContext<ChatDbContext>(connectionName: "weatherDbTest");
 builder.Services.AddControllers();
 
 // Add service defaults & Aspire client integrations.
