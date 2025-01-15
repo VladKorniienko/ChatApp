@@ -2,14 +2,8 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var cache = builder.AddRedis("cache");
 
-var sql = builder.AddSqlServer("chatApp")
-                 .WithDataVolume();
 
-var db = sql.AddDatabase("chatDatabase");
-
-var apiService = builder.AddProject<Projects.ChatAppAspire_ApiService>("apiservice")
-    .WithReference(db)
-    .WaitFor(db);
+var apiService = builder.AddProject<Projects.ChatAppAspire_ApiService>("apiservice");
 
 builder.AddProject<Projects.ChatAppAspire_Web>("webfrontend")
     .WithExternalHttpEndpoints()
