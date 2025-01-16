@@ -1,0 +1,46 @@
+﻿@page "/weatherTest"
+@rendermode InteractiveServer
+
+@inject WeatherApiClient WeatherApi
+
+<PageTitle>WeatherTest</PageTitle>
+
+<h1>WeatherTest</h1>
+
+<p>This component demonstrates communication capabilities with the backend API service.</p>
+
+<h2>Add Weather Record</h2>
+<div>
+    <label>Temperature (C):</label>
+    <input type="number" @bind="newTemperatureC" />
+</div>
+<div>
+    <label>Summary:</label>
+    <input type="text" @bind="newSummary" />
+</div>
+<button class="btn btn-primary" @onclick="AddWeatherRecord">Add</button>
+@if (isSubmitting)
+{
+    <p><em>Submitting...</em></p>
+}
+
+@code {
+    private int newTemperatureC;
+    private string? newSummary;
+    private bool isSubmitting = false;
+    protected async Task AddWeatherRecord()
+    {
+        isSubmitting = true;
+        var newRecord = new WeatherForecast(0, newTemperatureC, newSummary);
+
+        if (await WeatherApi.AddWeatherRecordAsync(newRecord))
+        {
+            newTemperatureC = 0; // Clear the input fields
+            newSummary = string.Empty;
+        }
+        else { }
+
+
+        isSubmitting = false;
+    }
+}
